@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Instalasi sistem SmartHome & otomasi rumah pintar di Jambi. Home automation, smart lighting, smart security oleh LABABIL SOLUTION. Rumah modern & efisien teknologi IoT terdepan!">
+  <meta name="keywords" content="smart home Jambi, otomasi rumah, home automation, rumah pintar, IoT, smart lighting, smart security, LABABIL SOLUTION">
+  <meta name="author" content="LABABIL SOLUTION">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Instalasi SmartHome & Rumah Pintar di Jambi - LABABIL SOLUTION">
+  <meta property="og:description" content="Instalasi sistem SmartHome & otomasi rumah pintar di Jambi. Home automation, smart lighting, smart security oleh LABABIL SOLUTION. Rumah modern & efisien teknologi IoT terdepan!">
+  <meta property="og:image" content="logo.png">
+  <meta property="og:url" content="https://lababilsolution.com/smarthome.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="LABABIL SOLUTION">
+  <meta property="og:locale" content="id_ID">
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Instalasi SmartHome & Rumah Pintar di Jambi - LABABIL SOLUTION">
+  <meta name="twitter:description" content="Instalasi sistem SmartHome & otomasi rumah pintar di Jambi. Home automation, smart lighting, smart security oleh LABABIL SOLUTION. Rumah modern & efisien teknologi IoT terdepan!">
+  <meta name="twitter:image" content="logo.png">
+  
+  <title>Instalasi SmartHome & Rumah Pintar di Jambi - LABABIL SOLUTION</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #2f3640;
+      min-height: 100vh;
+    }
+    .header {
+      background: rgba(255,255,255,0.1);
+      backdrop-filter: blur(20px);
+      padding: 25px 20px;
+      text-align: center;
+      border-bottom: 1px solid rgba(255,255,255,0.2);
+    }
+    .header h1 {
+      margin: 0 0 10px 0;
+      font-size: 2.5rem;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .brand-logo {
+      height: 32px;
+      width: auto;
+      display: inline-block;
+    }
+    .header p {
+      margin: 0;
+      color: rgba(255,255,255,0.9);
+      font-size: 1.2rem;
+    }
+    nav {
+      background: rgba(255,255,255,0.15);
+      backdrop-filter: blur(20px);
+      padding: 15px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 15px;
+      border-radius: 20px;
+      transition: all 0.3s ease;
+      background: rgba(255,255,255,0.1);
+    }
+    nav a:hover, nav a.active {
+      background: rgba(255,255,255,0.3);
+      transform: translateY(-2px);
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    .hero {
+      background: rgba(255,255,255,0.1);
+      backdrop-filter: blur(20px);
+      border-radius: 20px;
+      color: white;
+      text-align: center;
+      padding: 60px 30px;
+      margin: 30px 0;
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+    .hero h2 {
+      font-size: 2.8rem;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+    .hero p {
+      font-size: 1.3rem;
+      margin-bottom: 30px;
+      opacity: 0.95;
+      line-height: 1.6;
+    }
+    .cta-button {
+      display: inline-block;
+      background: linear-gradient(135deg, #e17055, #f39c12);
+      color: white;
+      padding: 18px 35px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.2rem;
+      box-shadow: 0 8px 25px rgba(225,112,85,0.4);
+      transition: all 0.3s ease;
+    }
+    .cta-button:hover {
+      background: linear-gradient(135deg, #d63031, #e17055);
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(225,112,85,0.6);
+    }
+    .content-section {
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(20px);
+      border-radius: 20px;
+      padding: 40px 30px;
+      margin: 30px 0;
+      border: 1px solid rgba(255,255,255,0.3);
+    }
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+    .feature-card {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: white;
+      border-radius: 20px;
+      padding: 30px;
+      text-align: center;
+      transition: all 0.3s ease;
+      border: 2px solid transparent;
+      position: relative;
+      overflow: hidden;
+    }
+    .feature-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+      border-radius: 20px;
+    }
+    .feature-card:hover {
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: 0 20px 40px rgba(102,126,234,0.4);
+    }
+    .feature-icon {
+      width: 80px;
+      height: 80px;
+      background: rgba(255,255,255,0.2);
+      border-radius: 50%;
+      margin: 0 auto 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 35px;
+      position: relative;
+      z-index: 1;
+    }
+    .feature-card h3 {
+      position: relative;
+      z-index: 1;
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+    }
+    .feature-card p {
+      position: relative;
+      z-index: 1;
+      line-height: 1.6;
+      opacity: 0.95;
+    }
+    .packages-section {
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(20px);
+      border-radius: 20px;
+      padding: 40px 30px;
+      margin: 30px 0;
+    }
+    .packages-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+    .package-card {
+      background: white;
+      border-radius: 20px;
+      padding: 30px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+      border: 2px solid transparent;
+      position: relative;
+    }
+    .package-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+      border-color: #667eea;
+    }
+    .package-card.premium {
+      border-color: #f39c12;
+      transform: scale(1.05);
+      position: relative;
+    }
+    .package-card.premium::before {
+      content: "TERPOPULER";
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: linear-gradient(135deg, #f39c12, #e17055);
+      color: white;
+      padding: 8px 25px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: bold;
+      box-shadow: 0 5px 15px rgba(243,156,18,0.4);
+    }
+    .package-price {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #667eea;
+      margin: 20px 0;
+    }
+    .package-price.premium {
+      color: #f39c12;
+    }
+    .package-features {
+      list-style: none;
+      padding: 0;
+      margin: 25px 0;
+    }
+    .package-features li {
+      padding: 10px 0;
+      border-bottom: 1px solid #eee;
+      position: relative;
+      padding-left: 25px;
+    }
+    .package-features li:before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #27ae60;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+    .tech-showcase {
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(20px);
+      border-radius: 20px;
+      padding: 40px 30px;
+      margin: 30px 0;
+    }
+    .tech-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+    .tech-item {
+      background: linear-gradient(135deg, #74b9ff, #0984e3);
+      color: white;
+      padding: 25px;
+      border-radius: 15px;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+    .tech-item:hover {
+      transform: translateY(-5px) rotate(2deg);
+      box-shadow: 0 15px 30px rgba(116,185,255,0.4);
+    }
+    .contact-form {
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(20px);
+      border-radius: 20px;
+      padding: 40px 30px;
+      margin: 30px 0;
+      border: 1px solid rgba(255,255,255,0.3);
+    }
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-group.full-width {
+      grid-column: 1 / -1;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #273c75;
+    }
+    .form-group input, 
+    .form-group select, 
+    .form-group textarea {
+      width: 100%;
+      padding: 15px;
+      border: 2px solid rgba(102,126,234,0.3);
+      border-radius: 12px;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+      box-sizing: border-box;
+      background: rgba(255,255,255,0.9);
+    }
+    .form-group input:focus, 
+    .form-group select:focus, 
+    .form-group textarea:focus {
+      border-color: #667eea;
+      outline: none;
+      box-shadow: 0 0 15px rgba(102,126,234,0.3);
+      background: white;
+    }
+    .submit-btn {
+      width: 100%;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: white;
+      padding: 18px;
+      border: none;
+      border-radius: 12px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .submit-btn:hover {
+      background: linear-gradient(135deg, #764ba2, #667eea);
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px rgba(102,126,234,0.6);
+    }
+    .footer {
+      background: rgba(255,255,255,0.1);
+      backdrop-filter: blur(20px);
+      color: white;
+      text-align: center;
+      padding: 30px;
+      margin-top: 50px;
+      border-top: 1px solid rgba(255,255,255,0.2);
+    }
+    .whatsapp-float {
+      position: fixed;
+      width: 70px;
+      height: 70px;
+      bottom: 30px;
+      right: 30px;
+      background: linear-gradient(135deg, #25d366, #128c7e);
+      color: white;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 35px;
+      box-shadow: 0 8px 25px rgba(37,211,102,0.4);
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      animation: pulse 3s infinite;
+    }
+    .whatsapp-float:hover {
+      transform: scale(1.1) rotate(10deg);
+      box-shadow: 0 15px 35px rgba(37,211,102,0.6);
+    }
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+      70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+    }
+    @media (max-width: 768px) {
+      .hero h2 { font-size: 2rem; }
+      .features-grid { grid-template-columns: 1fr; }
+      .packages-grid { grid-template-columns: 1fr; }
+      .form-grid { grid-template-columns: 1fr; }
+      nav a { margin: 0 8px; font-size: 0.9rem; }
+      .header h1 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>
+      <img src="logo.png" alt="LABABIL SOLUTION - Jasa Instalasi SmartHome & Rumah Pintar Jambi" class="brand-logo" loading="eager">
+      🏠 SmartHome & Rumah Pintar
+    </h1>
+    <p>LABABIL SOLUTION - Teknologi IoT Terdepan untuk Rumah Modern</p>
+  </div>
+
+  <nav>
+    <a href="index.html">🏠 Beranda</a>
+    <a href="cctv.html">📹 CCTV</a>
+    <a href="jaringan.html">🌐 Jaringan</a>
+    <a href="listrik.html">⚡ Listrik</a>
+    <a href="listrik.html#ac">❄️ AC</a>
+    <a href="smarthome.html" class="active">🏠 SmartHome</a>
+  </nav>
+
+  <div class="container">
+    <section class="hero">
+      <h2>🚀 Wujudkan Rumah Impian Anda</h2>
+      <p>Transformasi rumah konvensional menjadi SmartHome dengan teknologi IoT terdepan. Kontrol pencahayaan, keamanan, AC, dan semua perangkat dari smartphone. Hidup lebih nyaman, aman, dan hemat energi!</p>
+      <a href="#konsultasi" class="cta-button">✨ Konsultasi SmartHome Gratis</a>
+    </section>
+
+    <div class="content-section">
+      <h2 style="text-align: center; color: #273c75; font-size: 2.5rem; margin-bottom: 30px;">🔥 Fitur SmartHome Unggulan</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">💡</div>
+          <h3>Smart Lighting</h3>
+          <p>Kontrol lampu dari smartphone, jadwal otomatis, dimmer control, dan perubahan warna sesuai mood. Hemat energi hingga 70% dengan sensor gerak.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔐</div>
+          <h3>Smart Security</h3>
+          <p>Kunci pintu digital, CCTV terintegrasi, alarm sistem, dan notifikasi real-time ke HP. Keamanan maksimal dengan face recognition.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">❄️</div>
+          <h3>Climate Control</h3>
+          <p>Kontrol AC, kipas, dan ventilasi otomatis berdasarkan suhu ruangan. Jadwal hidup/mati AC sebelum pulang kerja.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📱</div>
+          <h3>Voice Assistant</h3>
+          <p>Integrasi Google Assistant dan Alexa. Kontrol semua perangkat dengan suara: "Ok Google, nyalakan lampu ruang tamu".</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎵</div>
+          <h3>Audio Visual</h3>
+          <p>Sistem hiburan terintegrasi, speaker multi-room, TV control, dan home theater otomatis dengan satu sentuhan.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🌡️</div>
+          <h3>Environmental Monitor</h3>
+          <p>Monitoring kualitas udara, suhu, kelembaban, dan deteksi gas berbahaya dengan alert otomatis ke smartphone.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="tech-showcase">
+      <h2 style="text-align: center; color: #273c75; font-size: 2.5rem; margin-bottom: 20px;">⚙️ Teknologi yang Kami Gunakan</h2>
+      <p style="text-align: center; color: #666; font-size: 1.2rem; margin-bottom: 30px;">Platform dan perangkat IoT terpercaya dari brand global</p>
+      <div class="tech-grid">
+        <div class="tech-item">
+          <h4>📡 WiFi & Zigbee</h4>
+          <p>Protokol komunikasi stabil untuk semua device</p>
+        </div>
+        <div class="tech-item">
+          <h4>📱 Mobile App</h4>
+          <p>Aplikasi iOS & Android untuk kontrol penuh</p>
+        </div>
+        <div class="tech-item">
+          <h4>☁️ Cloud Storage</h4>
+          <p>Data tersimpan aman di cloud dengan backup</p>
+        </div>
+        <div class="tech-item">
+          <h4>🧠 AI Learning</h4>
+          <p>Sistem belajar pola hidup untuk otomasi</p>
+        </div>
+        <div class="tech-item">
+          <h4>🔒 Security</h4>
+          <p>Enkripsi bank-grade untuk keamanan data</p>
+        </div>
+        <div class="tech-item">
+          <h4>⚡ Low Power</h4>
+          <p>Konsumsi listrik minimal dengan sensor hemat</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="packages-section">
+      <h2 style="text-align: center; color: #273c75; font-size: 2.5rem; margin-bottom: 20px;">📦 Paket SmartHome Terjangkau</h2>
+      <p style="text-align: center; color: #666; font-size: 1.2rem; margin-bottom: 30px;">Pilih paket sesuai kebutuhan dan budget Anda</p>
+      <div class="packages-grid">
+        <div class="package-card">
+          <h3>🏠 Starter Package</h3>
+          <div class="package-price">Rp 8,5 Juta</div>
+          <ul class="package-features">
+            <li>Smart Switch 10 titik</li>
+            <li>Smart Socket 5 titik</li>
+            <li>Motion Sensor 3 unit</li>
+            <li>Door Sensor 2 unit</li>
+            <li>Smart Hub Controller</li>
+            <li>Mobile App Setup</li>
+            <li>Instalasi & Training</li>
+            <li>Garansi 2 Tahun</li>
+          </ul>
+        </div>
+        <div class="package-card premium">
+          <h3>🏘️ Premium Package</h3>
+          <div class="package-price premium">Rp 18,5 Juta</div>
+          <ul class="package-features">
+            <li>Smart Lighting 20 titik</li>
+            <li>Smart Lock Pintu Digital</li>
+            <li>IP Camera 4 unit terintegrasi</li>
+            <li>Climate Control (AC + Fan)</li>
+            <li>Voice Assistant Setup</li>
+            <li>Security Alarm System</li>
+            <li>Environmental Monitoring</li>
+            <li>24/7 Remote Support</li>
+            <li>Garansi 3 Tahun</li>
+          </ul>
+        </div>
+        <div class="package-card">
+          <h3>🏰 Ultimate Package</h3>
+          <div class="package-price">Rp 35 Juta</div>
+          <ul class="package-features">
+            <li>Full Home Automation</li>
+            <li>Multi-Zone Audio Visual</li>
+            <li>Advanced Security System</li>
+            <li>Energy Management System</li>
+            <li>Garden Irrigation Control</li>
+            <li>Garage Door Automation</li>
+            <li>Whole House Integration</li>
+            <li>Custom Scenes & Schedules</li>
+            <li>Lifetime Support</li>
+            <li>Garansi 5 Tahun</li>
+          </ul>
+        </div>
+      </div>
+      <div style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 30px; border-radius: 20px; margin-top: 30px; text-align: center;">
+        <h3 style="margin-top: 0;">🎁 Promo Spesial Tahun Baru 2025!</h3>
+        <p style="font-size: 1.1rem; margin: 15px 0;">✅ <strong>Gratis konsultasi dan desain SmartHome</strong><br>
+        ✅ <strong>Diskon instalasi hingga 25%</strong><br>
+        ✅ <strong>Cicilan 0% untuk 12 bulan</strong><br>
+        ✅ <strong>Extended warranty +1 tahun</strong></p>
+        <p style="font-style: italic; margin-bottom: 0;">*Berlaku hingga 31 Januari 2025. Syarat dan ketentuan berlaku.</p>
+      </div>
+    </div>
+
+    <div class="contact-form" id="konsultasi">
+      <h2 style="text-align: center; color: #273c75; font-size: 2.5rem; margin-bottom: 20px;">📋 Konsultasi SmartHome Gratis</h2>
+      <p style="text-align: center; color: #666; font-size: 1.2rem; margin-bottom: 30px;">Ceritakan kebutuhan Anda, kami akan buatkan solusi SmartHome terbaik</p>
+      <form onsubmit="sendSmartHomeInquiry(event)">
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="nama">Nama Lengkap</label>
+            <input type="text" id="nama" placeholder="Nama Anda" required>
+          </div>
+          <div class="form-group">
+            <label for="telp">Nomor WhatsApp</label>
+            <input type="tel" id="telp" placeholder="08xxx" required>
+          </div>
+        </div>
+        <div class="form-group full-width">
+          <label for="alamat">Alamat Lengkap</label>
+          <textarea id="alamat" rows="2" placeholder="Alamat rumah untuk survey" required></textarea>
+        </div>
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="rumah">Tipe Rumah</label>
+            <select id="rumah" required>
+              <option value="">-- Pilih Tipe Rumah --</option>
+              <option value="Rumah Type 36">Rumah Type 36</option>
+              <option value="Rumah Type 45">Rumah Type 45</option>
+              <option value="Rumah Type 60">Rumah Type 60</option>
+              <option value="Rumah Type 90+">Rumah Type 90+</option>
+              <option value="Apartemen">Apartemen</option>
+              <option value="Townhouse">Townhouse</option>
+              <option value="Villa">Villa</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="paket">Paket yang Diminati</label>
+            <select id="paket" required>
+              <option value="">-- Pilih Paket --</option>
+              <option value="Starter Package - 8.5 Juta">Starter Package - Rp 8,5 Juta</option>
+              <option value="Premium Package - 18.5 Juta">Premium Package - Rp 18,5 Juta</option>
+              <option value="Ultimate Package - 35 Juta">Ultimate Package - Rp 35 Juta</option>
+              <option value="Custom Package">Custom Package</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group full-width">
+          <label for="fitur">Fitur SmartHome yang Diinginkan</label>
+          <textarea id="fitur" rows="3" placeholder="Contoh: Smart lighting untuk semua ruangan, kunci pintu digital, kontrol AC, CCTV terintegrasi, dll..." required></textarea>
+        </div>
+        <div class="form-group full-width">
+          <label for="budget">Budget yang Disiapkan</label>
+          <select id="budget" required>
+            <option value="">-- Pilih Range Budget --</option>
+            <option value="5-10 Juta">Rp 5-10 Juta</option>
+            <option value="10-20 Juta">Rp 10-20 Juta</option>
+            <option value="20-35 Juta">Rp 20-35 Juta</option>
+            <option value="35+ Juta">Rp 35+ Juta</option>
+            <option value="Fleksibel">Fleksibel sesuai rekomendasi</option>
+          </select>
+        </div>
+        <button type="submit" class="submit-btn">🚀 Kirim Konsultasi via WhatsApp</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p><strong>LABABIL SOLUTION</strong> - Spesialis SmartHome & Rumah Pintar Terdepan di Jambi</p>
+    <p>📍 Perumahan Mutiara Selatan Blok M12 RT.19, Kenali Asam Bawah, Jambi</p>
+    <p>📱 <a href="https://wa.me/6282312235675" style="color: #25d366;">0823-1223-5675</a> | ✉️ <a href="mailto:info@lababilsolution.com" style="color: #74b9ff;">info@lababilsolution.com</a></p>
+    <p>© 2025 LABABIL SOLUTION | <a href="https://youtube.com/@l4" style="color: #ff6b6b;">🎥 YouTube Channel</a></p>
+  </div>
+
+  <!-- Enhanced WhatsApp Float Button -->
+  <a href="https://wa.me/6282312235675" class="whatsapp-float" target="_blank" title="Konsultasi SmartHome via WhatsApp">
+    💬
+  </a>
+
+  <script>
+    function sendSmartHomeInquiry(event) {
+      event.preventDefault();
+      
+      const nama = document.getElementById("nama").value;
+      const telp = document.getElementById("telp").value;
+      const alamat = document.getElementById("alamat").value;
+      const rumah = document.getElementById("rumah").value;
+      const paket = document.getElementById("paket").value;
+      const fitur = document.getElementById("fitur").value;
+      const budget = document.getElementById("budget").value;
+      
+      const message = `🏠 KONSULTASI SMARTHOME 🏠
+
+Halo LABABIL SOLUTION,
+
+Saya tertarik dengan layanan SmartHome:
+
+👤 Nama: ${nama}
+📱 WhatsApp: ${telp}
+📍 Alamat: ${alamat}
+🏠 Tipe Rumah: ${rumah}
+📦 Paket: ${paket}
+💰 Budget: ${budget}
+
+✨ Fitur yang Diinginkan:
+${fitur}
+
+Mohon survey gratis dan konsultasi lengkap untuk desain SmartHome yang sesuai kebutuhan saya.
+
+Terima kasih! 🙏`;
+      
+      const url = `https://wa.me/6282312235675?text=${encodeURIComponent(message)}`;
+      window.open(url, "_blank");
+    }
+  </script>
+
+</body>
+</html>

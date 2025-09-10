@@ -1,0 +1,39 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://lababilsolution.com/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Allow all search engines to index all content
+Allow: /cctv.html
+Allow: /jaringan.html
+Allow: /listrik.html
+Allow: /smarthome.html
+Allow: /logo.png
+Allow: /favicon.ico
+
+# Block access to sensitive files (if any)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.log$
+Disallow: /*.tmp$
+
+# Allow Google and Bing to crawl everything
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Block bad bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /

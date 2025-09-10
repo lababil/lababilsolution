@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LABABIL SOLUTION - Jasa instalasi listrik profesional dan layanan AC (instalasi, service, isi freon, perbaikan) di Jambi. Teknisi berlisensi, standar SNI, garansi resmi.">
+  <meta name="keywords" content="jasa instalasi listrik Jambi, teknisi listrik, upgrade daya PLN, service AC Jambi, isi freon AC, perbaikan AC, LABABIL SOLUTION">
+  <meta name="author" content="LABABIL SOLUTION">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Layanan Instalasi Listrik & Service AC - LABABIL SOLUTION Jambi">
+  <meta property="og:description" content="LABABIL SOLUTION - Jasa instalasi listrik profesional dan layanan AC (instalasi, service, isi freon, perbaikan) di Jambi. Teknisi berlisensi, standar SNI, garansi resmi.">
+  <meta property="og:image" content="logo.png">
+  <meta property="og:url" content="https://lababilsolution.com/listrik.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="LABABIL SOLUTION">
+  <meta property="og:locale" content="id_ID">
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Layanan Instalasi Listrik & Service AC - LABABIL SOLUTION Jambi">
+  <meta name="twitter:description" content="LABABIL SOLUTION - Jasa instalasi listrik profesional dan layanan AC (instalasi, service, isi freon, perbaikan) di Jambi. Teknisi berlisensi, standar SNI, garansi resmi.">
+  <meta name="twitter:image" content="logo.png">
+  
+  <title>Layanan Instalasi Listrik & Service AC - LABABIL SOLUTION Jambi</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #f5f6fa;
+      color: #2f3640;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .page-selector {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .page-selector button {
+      background: #273c75;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      margin: 0 10px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+    .page-selector button:hover, .page-selector button.active {
+      background: #40739e;
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(64,115,158,0.4);
+    }
+    .page {
+      display: none;
+      background: white;
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+    .page.active {
+      display: block;
+    }
+    .page h1 {
+      color: #273c75;
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      border-bottom: 3px solid #40739e;
+      padding-bottom: 15px;
+    }
+    .hero-section {
+      background: linear-gradient(135deg, #e17055, #f39c12);
+      color: white;
+      padding: 40px;
+      border-radius: 15px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .hero-section.ac {
+      background: linear-gradient(135deg, #74b9ff, #0984e3);
+    }
+    .hero-section h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+      margin: 30px 0;
+    }
+    .service-card {
+      background: #f8f9fa;
+      padding: 25px;
+      border-radius: 12px;
+      border-left: 4px solid #e17055;
+      transition: all 0.3s ease;
+    }
+    .service-card.ac {
+      border-left-color: #74b9ff;
+    }
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+    .service-card h3 {
+      color: #273c75;
+      margin-bottom: 10px;
+    }
+    .price-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      margin: 30px 0;
+    }
+    .price-card {
+      background: white;
+      border: 2px solid #ddd;
+      border-radius: 15px;
+      padding: 25px;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+    .price-card:hover {
+      border-color: #40739e;
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+    .price-card h3 {
+      color: #273c75;
+      font-size: 1.5rem;
+    }
+    .price {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #e17055;
+      margin: 15px 0;
+    }
+    .price.ac {
+      color: #74b9ff;
+    }
+    .features-list {
+      list-style: none;
+      padding: 0;
+    }
+    .features-list li {
+      padding: 5px 0;
+      border-bottom: 1px solid #eee;
+    }
+    .features-list li:before {
+      content: "✓ ";
+      color: #27ae60;
+      font-weight: bold;
+    }
+    .cta-section {
+      background: linear-gradient(135deg, #2d3436, #636e72);
+      color: white;
+      padding: 40px;
+      border-radius: 15px;
+      text-align: center;
+      margin-top: 40px;
+    }
+    .cta-button {
+      background: #27ae60;
+      color: white;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 25px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+      margin: 10px;
+    }
+    .cta-button:hover {
+      background: #2ecc71;
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(39,174,96,0.4);
+    }
+    .why-choose {
+      background: #ecf0f1;
+      padding: 30px;
+      border-radius: 15px;
+      margin: 30px 0;
+    }
+    .why-choose h3 {
+      color: #273c75;
+      text-align: center;
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .benefit-item {
+      text-align: center;
+      padding: 20px;
+    }
+    .benefit-icon {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="page-selector">
+      <button onclick="showPage('listrik')" class="active" id="btn-listrik">⚡ Layanan Listrik</button>
+      <button onclick="showPage('ac')" id="btn-ac">❄️ Layanan AC</button>
+    </div>
+
+    <!-- HALAMAN LISTRIK -->
+    <div id="listrik" class="page active">
+      <h1>⚡ Layanan Instalasi Listrik Profesional</h1>
+      
+      <div class="hero-section">
+        <h2>Instalasi Listrik Aman & Sesuai Standar PLN</h2>
+        <p>Teknisi berlisensi dengan pengalaman puluhan tahun melayani instalasi listrik rumah, kantor, dan industri di Jambi. Garansi resmi dan sertifikat laik operasi.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>🏠 Instalasi Listrik Rumah</h3>
+          <p>Pemasangan instalasi listrik rumah baru, renovasi, dan upgrade daya. Termasuk panel MCB, stop kontak, saklar, dan lampu dengan standar SNI.</p>
+        </div>
+        <div class="service-card">
+          <h3>🏢 Instalasi Listrik Kantor</h3>
+          <p>Sistem kelistrikan kantor dan gedung dengan load balancing, grounding system, dan proteksi surge untuk keamanan peralatan elektronik.</p>
+        </div>
+        <div class="service-card">
+          <h3>⚡ Upgrade Daya Listrik</h3>
+          <p>Penambahan daya PLN dari 900VA hingga 197.000VA. Termasuk pengurusan administrasi dan instalasi panel distribusi baru.</p>
+        </div>
+        <div class="service-card">
+          <h3>🔧 Service & Perbaikan</h3>
+          <p>Troubleshooting masalah kelistrikan, perbaikan korsleting, ganti MCB, dan maintenance panel listrik berkala.</p>
+        </div>
+        <div class="service-card">
+          <h3>🌟 Instalasi Lampu LED</h3>
+          <p>Pemasangan sistem pencahayaan LED hemat energi dengan dimmer control dan smart switch untuk efisiensi maksimal.</p>
+        </div>
+        <div class="service-card">
+          <h3>🛡️ Grounding & Proteksi</h3>
+          <p>Instalasi sistem pentanahan (grounding) dan surge protector untuk melindungi peralatan dari lonjakan listrik.</p>
+        </div>
+      </div>
+
+      <div class="why-choose">
+        <h3>⭐ Mengapa Pilih Layanan Listrik Kami?</h3>
+        <div class="benefits-grid">
+          <div class="benefit-item">
+            <div class="benefit-icon">👨‍🔧</div>
+            <h4>Teknisi Berlisensi</h4>
+            <p>Tim teknisi bersertifikat resmi dengan pengalaman 10+ tahun di bidang kelistrikan</p>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-icon">📋</div>
+            <h4>Standar SNI</h4>
+            <p>Semua instalasi mengikuti standar SNI dan mendapat sertifikat laik operasi dari PLN</p>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-icon">🛡️</div>
+            <h4>Garansi 5 Tahun</h4>
+            <p>Garansi instalasi 5 tahun dan garansi spare part 2 tahun dengan layanan maintenance gratis</p>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-icon">💰</div>
+            <h4>Harga Bersaing</h4>
+            <p>Tarif kompetitif dengan kualitas premium. Gratis survey dan konsultasi untuk semua klien</p>
+          </div>
+        </div>
+      </div>
+
+      <h3 style="text-align: center; color: #273c75; font-size: 1.8rem;">💰 Paket Harga Instalasi Listrik</h3>
+      <div class="price-grid">
+        <div class="price-card">
+          <h3>🏠 Paket Rumah Kecil</h3>
+          <div class="price">Rp 3,5 Juta</div>
+          <ul class="features-list">
+            <li>Panel MCB 6 group</li>
+            <li>10 titik stop kontak</li>
+            <li>15 titik lampu + saklar</li>
+            <li>Grounding system</li>
+            <li>Kabel NYM standar SNI</li>
+            <li>Instalasi dan testing</li>
+            <li>Garansi 5 tahun</li>
+          </ul>
+        </div>
+        <div class="price-card">
+          <h3>🏘️ Paket Rumah Besar</h3>
+          <div class="price">Rp 8,2 Juta</div>
+          <ul class="features-list">
+            <li>Panel MCB 12 group</li>
+            <li>20 titik stop kontak</li>
+            <li>25 titik lampu + saklar</li>
+            <li>AC outlet 3 titik</li>
+            <li>Smart switch optional</li>
+            <li>Lightning arrester</li>
+            <li>Sertifikat SLO</li>
+          </ul>
+        </div>
+        <div class="price-card">
+          <h3>🏢 Paket Kantor</h3>
+          <div class="price">Rp 15 Juta</div>
+          <ul class="features-list">
+            <li>Panel distribusi 3 phase</li>
+            <li>Load balancing system</li>
+            <li>Emergency lighting</li>
+            <li>Power factor correction</li>
+            <li>Surge protection device</li>
+            <li>Maintenance 1 tahun</li>
+            <li>Monitoring system</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cta-section">
+        <h3>⚡ Butuh Instalasi Listrik Profesional?</h3>
+        <p>Konsultasi gratis dengan teknisi berlisensi. Survey lokasi dan penawaran terbaik!</p>
+        <a href="#" onclick="sendListrikInquiry()" class="cta-button">📱 WhatsApp Sekarang</a>
+        <a href="#" onclick="callNow()" class="cta-button">📞 Telepon Langsung</a>
+      </div>
+    </div>
+
+    <!-- HALAMAN AC -->
+    <div id="ac" class="page">
+      <h1>❄️ Layanan AC Profesional Terpercaya</h1>
+      
+      <div class="hero-section ac">
+        <h2>Instalasi, Service & Perawatan AC Semua Merk</h2>
+        <p>Teknisi AC berpengalaman dengan sertifikat resmi melayani instalasi AC baru, service rutin, isi freon, dan perbaikan AC untuk rumah, kantor, dan komersial di Jambi.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card ac">
+          <h3>🆕 Instalasi AC Baru</h3>
+          <p>Pemasangan AC split wall, cassette, standing floor semua merk dengan instalasi pipa, kabel, dan bracket yang rapi dan aman sesuai standar pabrik.</p>
+        </div>
+        <div class="service-card ac">
+          <h3>🔧 Service AC Rutin</h3>
+          <p>Pembersihan filter, evaporator, condenser, cek freon, dan tune-up komponen AC untuk performa optimal dan hemat listrik.</p>
+        </div>
+        <div class="service-card ac">
+          <h3>❄️ Isi Freon AC</h3>
+          <p>Pengisian freon R32, R410A, R22 dengan takaran tepat sesuai spesifikasi pabrik. Termasuk cek kebocoran sistem.</p>
+        </div>
+        <div class="service-card ac">
+          <h3>⚡ Perbaikan AC</h3>
+          <p>Diagnosa dan perbaikan kerusakan AC: tidak dingin, kompresor mati, kebocoran freon, PCB rusak, dan masalah lainnya.</p>
+        </div>
+        <div class="service-card ac">
+          <h3>📦 Bongkar Pasang AC</h3>
+          <p>Layanan bongkar pasang AC untuk pindah rumah atau renovasi dengan vacuum pump untuk menjaga kualitas freon.</p>
+        </div>
+        <div class="service-card ac">
+          <h3>🏢 AC Central/VRV</h3>
+          <p>Instalasi dan maintenance AC central, VRV, chiller untuk gedung, mall, dan industri dengan sistem monitoring.</p>
+        </div>
+      </div>
+
+      <div class="why-choose">
+        <h3>⭐ Keunggulan Service AC Kami</h3>
+        <div class="benefits-grid">
+          <div class="benefit-item">
+            <div class="benefit-icon">👨‍🔧</div>
+            <h4>Teknisi Bersertifikat</h4>
+            <p>Tim teknisi AC profesional dengan sertifikat resmi dari berbagai brand AC ternama</p>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-icon">🛠️</div>
+            <h4>Peralatan Lengkap</h4>
+            <p>Tools profesional: vacuum pump, manifold gauge, leak detector untuk service berkualitas</p>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-icon">⚡</div>
+            <h4>Spare Part Asli</h4>
+            <p>Menggunakan komponen dan freon original untuk menjamin kualitas dan daya tahan AC</p>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-icon">🚀</div>
+            <h4>Layanan Cepat</h4>
+            <p>Response time maksimal 2 jam dalam kota Jambi. Emergency service tersedia 24/7</p>
+          </div>
+        </div>
+      </div>
+
+      <h3 style="text-align: center; color: #273c75; font-size: 1.8rem;">💰 Harga Service AC Terjangkau</h3>
+      <div class="price-grid">
+        <div class="price-card">
+          <h3>🧹 Service AC Rutin</h3>
+          <div class="price ac">Rp 150K</div>
+          <ul class="features-list">
+            <li>Bersih filter & evaporator</li>
+            <li>Cek sistem kelistrikan</li>
+            <li>Cek level freon</li>
+            <li>Tune-up komponen</li>
+            <li>Test running 30 menit</li>
+            <li>Garansi service 1 bulan</li>
+          </ul>
+        </div>
+        <div class="price-card">
+          <h3>❄️ Isi Freon AC</h3>
+          <div class="price ac">Rp 350K</div>
+          <ul class="features-list">
+            <li>Cek kebocoran sistem</li>
+            <li>Vacuum system</li>
+            <li>Isi freon sesuai spek</li>
+            <li>Pressure test</li>
+            <li>Service cleaning gratis</li>
+            <li>Garansi freon 6 bulan</li>
+          </ul>
+        </div>
+        <div class="price-card">
+          <h3>🆕 Instalasi AC Baru</h3>
+          <div class="price ac">Rp 450K</div>
+          <ul class="features-list">
+            <li>Instalasi pipa & kabel</li>
+            <li>Bracket dinding/lantai</li>
+            <li>Vacuum & test pressure</li>
+            <li>Commissioning AC</li>
+            <li>Training penggunaan</li>
+            <li>Garansi instalasi 2 tahun</li>
+          </ul>
+        </div>
+      </div>
+
+      <div style="background: #e8f8f5; padding: 25px; border-radius: 15px; margin: 30px 0; border-left: 5px solid #00b894;">
+        <h4 style="color: #00b894; margin-top: 0;">🎯 Promo Khusus Bulan Ini!</h4>
+        <ul style="margin: 15px 0; padding-left: 20px;">
+          <li><strong>Service 3 AC = Gratis 1 AC</strong> (minimal AC 1 PK)</li>
+          <li><strong>Instalasi AC + Service 6 Bulan Gratis</strong></li>
+          <li><strong>Paket Kontrak Maintenance</strong> - Diskon hingga 30%</li>
+        </ul>
+        <p style="margin-bottom: 0; font-style: italic; color: #666;">*Syarat dan ketentuan berlaku. Hubungi kami untuk detail promo.</p>
+      </div>
+
+      <div class="cta-section">
+        <h3>❄️ AC Bermasalah? Hubungi Kami Sekarang!</h3>
+        <p>Teknisi siap datang ke lokasi dalam 2 jam. Konsultasi dan cek AC gratis!</p>
+        <a href="#" onclick="sendACInquiry()" class="cta-button">📱 WhatsApp Sekarang</a>
+        <a href="#" onclick="emergencyCall()" class="cta-button" style="background: #e74c3c;">🚨 Emergency 24/7</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function showPage(pageId) {
+      // Hide all pages
+      const pages = document.querySelectorAll('.page');
+      pages.forEach(page => page.classList.remove('active'));
+      
+      // Hide all buttons
+      const buttons = document.querySelectorAll('.page-selector button');
+      buttons.forEach(btn => btn.classList.remove('active'));
+      
+      // Show selected page
+      document.getElementById(pageId).classList.add('active');
+      document.getElementById('btn-' + pageId).classList.add('active');
+    }
+
+    // Pilih tab berdasarkan hash saat load dan saat hash berubah
+    function applyHashTab() {
+      const hash = (window.location.hash || '#listrik').replace('#', '');
+      if (hash === 'ac' || hash === 'listrik') {
+        showPage(hash);
+      } else {
+        showPage('listrik');
+      }
+    }
+
+    window.addEventListener('hashchange', applyHashTab);
+    window.addEventListener('DOMContentLoaded', applyHashTab);
+
+    function sendListrikInquiry() {
+      const message = `Halo LABABIL SOLUTION,
+
+Saya tertarik dengan layanan instalasi listrik:
+
+🏠 Jenis: (Rumah/Kantor/Industri)
+📍 Lokasi: 
+⚡ Kebutuhan: (Instalasi baru/Upgrade daya/Service/Perbaikan)
+📋 Detail: 
+
+Mohon survey dan penawaran terbaik. Terima kasih!`;
+      
+      const url = `https://wa.me/6282312235675?text=${encodeURIComponent(message)}`;
+      window.open(url, "_blank");
+    }
+
+    function sendACInquiry() {
+      const message = `Halo LABABIL SOLUTION,
+
+Saya butuh layanan AC:
+
+❄️ Jenis AC: (Split Wall/Cassette/Standing Floor)
+🔧 Layanan: (Instalasi Baru/Service/Isi Freon/Perbaikan)
+📍 Lokasi: 
+📋 Keluhan/Kebutuhan: 
+
+Mohon teknisi datang untuk cek. Terima kasih!`;
+      
+      const url = `https://wa.me/6282312235675?text=${encodeURIComponent(message)}`;
+      window.open(url, "_blank");
+    }
+
+    function callNow() {
+      alert('📞 Hubungi: 0823-1223-5675\n\nOperasional:\nSenin-Sabtu: 08:00-20:00\nMinggu: 09:00-17:00\n\nEmergency 24/7 tersedia!');
+    }
+
+    function emergencyCall() {
+      const message = `🚨 EMERGENCY AC SERVICE 🚨
+
+Saya butuh teknisi AC SEGERA:
+
+📍 Lokasi: 
+❄️ Jenis AC: 
+🔥 Masalah: 
+⏰ Waktu: Sekarang
+
+Mohon response cepat!`;
+      
+      const url = `https://wa.me/6282312235675?text=${encodeURIComponent(message)}`;
+      window.open(url, "_blank");
+    }
+  </script>
+</body>
+</html>

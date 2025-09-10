@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Layanan instalasi jaringan internet & LAN di Jambi. Setting router, switch, troubleshooting jaringan oleh teknisi LABABIL SOLUTION. Jaringan stabil & cepat untuk rumah dan kantor!">
+  <meta name="keywords" content="instalasi jaringan Jambi, setting router, jaringan LAN, WiFi kantor, troubleshooting internet, network installation, LABABIL SOLUTION">
+  <meta name="author" content="LABABIL SOLUTION">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Jasa Instalasi Jaringan Internet & LAN di Jambi - LABABIL SOLUTION">
+  <meta property="og:description" content="Layanan instalasi jaringan internet & LAN di Jambi. Setting router, switch, troubleshooting jaringan oleh teknisi LABABIL SOLUTION. Jaringan stabil & cepat untuk rumah dan kantor!">
+  <meta property="og:image" content="logo.png">
+  <meta property="og:url" content="https://lababilsolution.com/jaringan.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="LABABIL SOLUTION">
+  <meta property="og:locale" content="id_ID">
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Jasa Instalasi Jaringan Internet & LAN di Jambi - LABABIL SOLUTION">
+  <meta name="twitter:description" content="Layanan instalasi jaringan internet & LAN di Jambi. Setting router, switch, troubleshooting jaringan oleh teknisi LABABIL SOLUTION. Jaringan stabil & cepat untuk rumah dan kantor!">
+  <meta name="twitter:image" content="logo.png">
+  
+  <title>Jasa Instalasi Jaringan Internet & LAN di Jambi - LABABIL SOLUTION</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f5f6fa;
+      color: #2f3640;
+    }
+    header {
+      background: linear-gradient(135deg, #273c75, #40739e);
+      color: white;
+      padding: 25px 20px;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      margin: 0 0 10px 0;
+      font-size: 2.2rem;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .brand-logo {
+      height: 30px;
+      width: auto;
+      display: inline-block;
+    }
+    nav {
+      background: #40739e;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 15px;
+      border-radius: 20px;
+      transition: all 0.3s ease;
+    }
+    nav a:hover, nav a.active {
+      background: rgba(255,255,255,0.2);
+      transform: translateY(-2px);
+    }
+    .hero {
+      background: linear-gradient(135deg, #00b894 0%, #00cec9 100%);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      opacity: 0.95;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .cta-button {
+      display: inline-block;
+      background: #e17055;
+      color: white;
+      padding: 15px 30px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+      box-shadow: 0 5px 15px rgba(225,112,85,0.4);
+      transition: all 0.3s ease;
+    }
+    .cta-button:hover {
+      background: #d63031;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(225,112,85,0.6);
+    }
+    section {
+      padding: 50px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+    .service-card {
+      background: white;
+      border-radius: 15px;
+      padding: 30px;
+      text-align: center;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+      border: 2px solid transparent;
+    }
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+      border-color: #00b894;
+    }
+    .service-icon {
+      width: 70px;
+      height: 70px;
+      background: linear-gradient(135deg, #00b894, #00cec9);
+      border-radius: 50%;
+      margin: 0 auto 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      color: white;
+    }
+    .service-card h3 {
+      color: #273c75;
+      margin-bottom: 15px;
+      font-size: 1.4rem;
+    }
+    .service-card p {
+      color: #666;
+      line-height: 1.6;
+    }
+    .features-section {
+      background: linear-gradient(135deg, #2d3436, #636e72);
+      color: white;
+      margin: 0;
+      max-width: none;
+      text-align: center;
+    }
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+    .feature-item {
+      background: rgba(255,255,255,0.1);
+      padding: 25px;
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.2);
+      transition: all 0.3s ease;
+    }
+    .feature-item:hover {
+      transform: translateY(-5px);
+      border-color: #00b894;
+    }
+    .feature-item h4 {
+      color: #00cec9;
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+    }
+    .price-section {
+      background: #f8f9fa;
+    }
+    .price-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+    .price-card {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+      border: 2px solid transparent;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+    .price-card:hover {
+      transform: translateY(-5px);
+      border-color: #00b894;
+    }
+    .price-card.popular {
+      border-color: #e17055;
+      transform: scale(1.05);
+    }
+    .price-card.popular::before {
+      content: "TERPOPULER";
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #e17055;
+      color: white;
+      padding: 5px 20px;
+      border-radius: 15px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+    .price {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #00b894;
+      margin: 15px 0;
+    }
+    .price-features {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0;
+    }
+    .price-features li {
+      padding: 8px 0;
+      border-bottom: 1px solid #eee;
+    }
+    .price-features li:before {
+      content: "✓ ";
+      color: #00b894;
+      font-weight: bold;
+    }
+    .contact-form {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      max-width: 600px;
+      margin: 30px auto;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #273c75;
+    }
+    .form-group input, 
+    .form-group select, 
+    .form-group textarea {
+      width: 100%;
+      padding: 12px;
+      border: 2px solid #dcdde1;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+      box-sizing: border-box;
+    }
+    .form-group input:focus, 
+    .form-group select:focus, 
+    .form-group textarea:focus {
+      border-color: #00b894;
+      outline: none;
+      box-shadow: 0 0 10px rgba(0,184,148,0.3);
+    }
+    .submit-btn {
+      width: 100%;
+      background: #00b894;
+      color: white;
+      padding: 15px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .submit-btn:hover {
+      background: #00a085;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(0,184,148,0.6);
+    }
+    footer {
+      background: #273c75;
+      color: white;
+      text-align: center;
+      padding: 30px;
+      margin-top: 0;
+    }
+    footer a {
+      color: #fbc531;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .whatsapp-float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 30px;
+      right: 30px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 2px 2px 20px rgba(0,0,0,0.3);
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      animation: pulse 2s infinite;
+    }
+    .whatsapp-float:hover {
+      background-color: #128c7e;
+      transform: scale(1.1);
+    }
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+      70% { box-shadow: 0 0 0 10px rgba(37, 211, 102, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+    }
+    @media (max-width: 768px) {
+      .hero h2 { font-size: 2rem; }
+      .services-grid { grid-template-columns: 1fr; }
+      .price-grid { grid-template-columns: 1fr; }
+      nav a { margin: 0 8px; font-size: 0.9rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>
+      <img src="logo.png" alt="LABABIL SOLUTION - Jasa Instalasi Jaringan Internet LAN WiFi Jambi" class="brand-logo" loading="eager">
+      🌐 Layanan Jaringan Internet & LAN
+    </h1>
+    <p>LABABIL SOLUTION - Koneksi Stabil, Kecepatan Maksimal</p>
+  </header>
+
+  <nav>
+    <a href="index.html">🏠 Beranda</a>
+    <a href="cctv.html">📹 CCTV</a>
+    <a href="jaringan.html" class="active">🌐 Jaringan</a>
+    <a href="listrik.html">⚡ Listrik</a>
+    <a href="listrik.html#ac">❄️ AC</a>
+    <a href="smarthome.html">🏠 SmartHome</a>
+  </nav>
+
+  <section class="hero">
+    <h2>Jaringan Internet Super Cepat</h2>
+    <p>Instalasi jaringan LAN, WiFi, dan troubleshooting untuk rumah, kantor, dan gedung. Teknisi berpengalaman dengan peralatan networking terkini untuk koneksi internet yang stabil dan cepat.</p>
+    <a href="#konsultasi" class="cta-button">🚀 Konsultasi Jaringan Gratis</a>
+  </section>
+
+  <section>
+    <h2 style="text-align: center; color: #273c75; font-size: 2.2rem; margin-bottom: 20px;">💻 Layanan Jaringan Kami</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">🖥️</div>
+        <h3>Instalasi LAN Kantor</h3>
+        <p>Pemasangan jaringan kabel LAN untuk kantor dengan konfigurasi switch, router, dan server. Koneksi stabil untuk produktivitas maksimal tim kerja.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">📶</div>
+        <h3>Setup WiFi Enterprise</h3>
+        <p>Instalasi WiFi profesional dengan access point multiple, load balancing, dan manajemen bandwidth untuk coverage area luas dan user banyak.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🔧</div>
+        <h3>Troubleshooting Network</h3>
+        <p>Diagnosa dan perbaikan masalah jaringan seperti koneksi lambat, putus-putus, atau tidak bisa akses internet. Solusi cepat dan tepat.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🛡️</div>
+        <h3>Network Security</h3>
+        <p>Konfigurasi firewall, VPN, dan sistem keamanan jaringan untuk melindungi data dan sistem dari ancaman cyber dan akses tidak sah.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">☁️</div>
+        <h3>Cloud Integration</h3>
+        <p>Integrasi sistem cloud computing, backup otomatis, dan sinkronisasi data untuk akses file dari mana saja dengan keamanan tinggi.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">📊</div>
+        <h3>Network Monitoring</h3>
+        <p>Sistem monitoring jaringan real-time, analisis traffic, dan optimasi bandwidth untuk performa jaringan yang selalu optimal.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="features-section">
+    <h2 style="font-size: 2.2rem; margin-bottom: 20px;">⚡ Keunggulan Jaringan Kami</h2>
+    <div class="features-grid">
+      <div class="feature-item">
+        <h4>🚀 Kecepatan Tinggi</h4>
+        <p>Instalasi dengan kabel Cat6/Cat6A untuk speed hingga 1Gbps. Optimasi routing untuk latency minimal.</p>
+      </div>
+      <div class="feature-item">
+        <h4>📡 Coverage Luas</h4>
+        <p>WiFi dengan jangkauan luas menggunakan access point enterprise-grade. Tidak ada dead zone.</p>
+      </div>
+      <div class="feature-item">
+        <h4>🔒 Keamanan Tinggi</h4>
+        <p>Enkripsi WPA3, firewall advanced, dan VPN untuk proteksi data maksimal dari ancaman cyber.</p>
+      </div>
+      <div class="feature-item">
+        <h4>📈 Scalable</h4>
+        <p>Infrastruktur yang mudah dikembangkan seiring pertumbuhan bisnis tanpa rebuild dari awal.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="price-section">
+    <h2 style="text-align: center; color: #273c75; font-size: 2.2rem; margin-bottom: 20px;">💰 Paket Harga Jaringan</h2>
+    <p style="text-align: center; font-size: 1.1rem;">Pilih paket yang sesuai dengan kebutuhan jaringan Anda</p>
+    <div class="price-grid">
+      <div class="price-card">
+        <h3>🏠 Paket Rumah</h3>
+        <div class="price">Rp 1,5 Juta</div>
+        <ul class="price-features">
+          <li>Router WiFi Dual Band</li>
+          <li>Setting dan Konfigurasi</li>
+          <li>Optimasi Kecepatan</li>
+          <li>Security Setup</li>
+          <li>Training Penggunaan</li>
+          <li>Garansi 1 Tahun</li>
+        </ul>
+      </div>
+      <div class="price-card popular">
+        <h3>🏢 Paket Kantor</h3>
+        <div class="price">Rp 4,5 Juta</div>
+        <ul class="price-features">
+          <li>Instalasi LAN 20 Port</li>
+          <li>WiFi Enterprise 2 AP</li>
+          <li>Managed Switch 24 Port</li>
+          <li>Router Business Grade</li>
+          <li>Network Security</li>
+          <li>Monitoring System</li>
+          <li>Garansi 2 Tahun + Support</li>
+        </ul>
+      </div>
+      <div class="price-card">
+        <h3>🏭 Paket Enterprise</h3>
+        <div class="price">Rp 12 Juta</div>
+        <ul class="price-features">
+          <li>Infrastruktur Fiber Optic</li>
+          <li>Core Switch Enterprise</li>
+          <li>Multiple Access Point</li>
+          <li>Server Integration</li>
+          <li>Redundancy System</li>
+          <li>24/7 Monitoring</li>
+          <li>SLA 99.9% Uptime</li>
+        </ul>
+      </div>
+    </div>
+    <p style="text-align: center; margin-top: 30px; font-size: 1.1rem;">*Harga sudah termasuk instalasi dan konfigurasi. Survey gratis!</p>
+  </section>
+
+  <section>
+    <h2 style="text-align: center; color: #273c75; font-size: 2.2rem; margin-bottom: 20px;">📋 Konsultasi & Pemesanan Jaringan</h2>
+    <div class="contact-form">
+      <form onsubmit="sendNetworkInquiry(event)">
+        <div class="form-group">
+          <label for="nama">Nama Lengkap</label>
+          <input type="text" id="nama" required>
+        </div>
+        <div class="form-group">
+          <label for="telp">Nomor Telepon</label>
+          <input type="tel" id="telp" required>
+        </div>
+        <div class="form-group">
+          <label for="alamat">Alamat Lengkap</label>
+          <textarea id="alamat" rows="2" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="jenis">Jenis Lokasi</label>
+          <select id="jenis" required>
+            <option value="">-- Pilih Jenis --</option>
+            <option value="Rumah Tinggal">Rumah Tinggal</option>
+            <option value="Kantor Kecil">Kantor Kecil (< 20 orang)</option>
+            <option value="Kantor Besar">Kantor Besar (> 20 orang)</option>
+            <option value="Toko/Warung">Toko/Warung</option>
+            <option value="Pabrik/Gudang">Pabrik/Gudang</option>
+            <option value="Sekolah/Kampus">Sekolah/Kampus</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="paket">Paket Yang Diminati</label>
+          <select id="paket" required>
+            <option value="">-- Pilih Paket --</option>
+            <option value="Paket Rumah">Paket Rumah - Rp 1,5 Juta</option>
+            <option value="Paket Kantor">Paket Kantor - Rp 4,5 Juta</option>
+            <option value="Paket Enterprise">Paket Enterprise - Rp 12 Juta</option>
+            <option value="Custom">Custom Sesuai Kebutuhan</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="kebutuhan">Detail Kebutuhan</label>
+          <textarea id="kebutuhan" rows="4" placeholder="Jelaskan kebutuhan jaringan Anda: jumlah user, area coverage, kecepatan yang dibutuhkan, dll..." required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">🌐 Kirim Konsultasi via WhatsApp</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>LABABIL SOLUTION</strong> - Spesialis Jaringan Internet Terpercaya di Jambi</p>
+    <p>📍 Perumahan Mutiara Selatan Blok M12 RT.19, Kenali Asam Bawah, Jambi</p>
+    <p>📱 <a href="https://wa.me/6282312235675">0823-1223-5675</a> | ✉️ <a href="mailto:info@lababilsolution.com">info@lababilsolution.com</a></p>
+    <p>© 2025 LABABIL SOLUTION | <a href="https://youtube.com/@l4">YouTube</a></p>
+  </footer>
+
+  <!-- WhatsApp Float Button -->
+  <a href="https://wa.me/6282312235675" class="whatsapp-float" target="_blank" title="Chat WhatsApp Jaringan">
+    💬
+  </a>
+
+  <script>
+    function sendNetworkInquiry(event) {
+      event.preventDefault();
+      
+      const nama = document.getElementById("nama").value;
+      const telp = document.getElementById("telp").value;
+      const alamat = document.getElementById("alamat").value;
+      const jenis = document.getElementById("jenis").value;
+      const paket = document.getElementById("paket").value;
+      const kebutuhan = document.getElementById("kebutuhan").value;
+      
+      const message = `Halo LABABIL SOLUTION,
+
+Saya tertarik dengan layanan instalasi jaringan:
+
+👤 Nama: ${nama}
+📱 Telepon: ${telp}
+📍 Alamat: ${alamat}
+🏢 Jenis Lokasi: ${jenis}
+📦 Paket: ${paket}
+📋 Kebutuhan: ${kebutuhan}
+
+Mohon survey dan penawaran terbaik. Terima kasih!`;
+      
+      const url = `https://wa.me/6282312235675?text=${encodeURIComponent(message)}`;
+      window.open(url, "_blank");
+    }
+  </script>
+
+</body>
+</html>
