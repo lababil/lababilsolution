@@ -6,7 +6,7 @@
 
   <!-- Homepage -->
   <url>
-    <loc>https://lababilsolution.com/</loc>
+    <loc>https://lababil.biz.id/</loc>
     <lastmod>2025-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -14,7 +14,7 @@
 
   <!-- CCTV Service Page -->
   <url>
-    <loc>https://lababilsolution.com/cctv.html</loc>
+    <loc>https://lababil.biz.id/cctv.html</loc>
     <lastmod>2025-01-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -22,7 +22,7 @@
 
   <!-- Network Service Page -->
   <url>
-    <loc>https://lababilsolution.com/jaringan.html</loc>
+    <loc>https://lababil.biz.id/jaringan.html</loc>
     <lastmod>2025-01-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -30,7 +30,7 @@
 
   <!-- Electrical Service Page -->
   <url>
-    <loc>https://lababilsolution.com/listrik.html</loc>
+    <loc>https://lababil.biz.id/listrik.html</loc>
     <lastmod>2025-01-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -38,7 +38,7 @@
 
   <!-- AC Service Page (Hash URL) -->
   <url>
-    <loc>https://lababilsolution.com/listrik.html#ac</loc>
+    <loc>https://lababil.biz.id/listrik.html#ac</loc>
     <lastmod>2025-01-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -46,7 +46,7 @@
 
   <!-- SmartHome Service Page -->
   <url>
-    <loc>https://lababilsolution.com/smarthome.html</loc>
+    <loc>https://lababil.biz.id/smarthome.html</loc>
     <lastmod>2025-01-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>

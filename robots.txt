@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://lababilsolution.com/sitemap.xml
+Sitemap: https://lababil.biz.id/sitemap.xml
 
 # Crawl-delay
 Crawl-delay: 1
