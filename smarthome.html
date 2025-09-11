@@ -37,6 +37,20 @@
       color: #2f3640;
       min-height: 100vh;
     }
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('https://images.unsplash.com/photo-1687205902327-b43a44b75192?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      opacity: 0.5;
+      z-index: -1;
+    }
     .header {
       background: rgba(255,255,255,0.1);
       backdrop-filter: blur(20px);
@@ -623,12 +637,12 @@
   <div class="footer">
     <p><strong>LABABIL SOLUTION</strong> - Spesialis SmartHome & Rumah Pintar Terdepan di Jambi</p>
     <p>📍 Perumahan Mutiara Selatan Blok M12 RT.19, Kenali Asam Bawah, Jambi</p>
-    <p>📱 <a href="https://wa.me/6282312235675" style="color: #25d366;">0823-1223-5675</a> | ✉️ <a href="mailto:info@lababilsolution.com" style="color: #74b9ff;">info@lababilsolution.com</a></p>
+    <p>📱 <a href="https://wa.me/628997499994" style="color: #25d366;">0899-7499-994</a> | ✉️ <a href="mailto:info@lababilsolution.com" style="color: #74b9ff;">info@lababilsolution.com</a></p>
     <p>© 2025 LABABIL SOLUTION | <a href="https://youtube.com/@l4" style="color: #ff6b6b;">🎥 YouTube Channel</a></p>
   </div>
 
   <!-- Enhanced WhatsApp Float Button -->
-  <a href="https://wa.me/6282312235675" class="whatsapp-float" target="_blank" title="Konsultasi SmartHome via WhatsApp">
+  <a href="https://wa.me/628997499994" class="whatsapp-float" target="_blank" title="Konsultasi SmartHome via WhatsApp">
     💬
   </a>
 
@@ -664,7 +678,7 @@ Mohon survey gratis dan konsultasi lengkap untuk desain SmartHome yang sesuai ke
 
 Terima kasih! 🙏`;
       
-      const url = `https://wa.me/6282312235675?text=${encodeURIComponent(message)}`;
+      const url = `https://wa.me/628997499994?text=${encodeURIComponent(message)}`;
       window.open(url, "_blank");
     }
   </script>
