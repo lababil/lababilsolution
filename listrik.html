@@ -37,6 +37,20 @@
       background: #f5f6fa;
       color: #2f3640;
     }
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('https://images.unsplash.com/photo-1683295083329-4d4738291f3a?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      opacity: 0.5;
+      z-index: -1;
+    }
     .container {
       max-width: 1200px;
       margin: 0 auto;
@@ -497,7 +511,7 @@ Saya tertarik dengan layanan instalasi listrik:
 
 Mohon survey dan penawaran terbaik. Terima kasih!`;
       
-      const url = `https://wa.me/6282312235675?text=${encodeURIComponent(message)}`;
+      const url = `https://wa.me/628997499994?text=${encodeURIComponent(message)}`;
       window.open(url, "_blank");
     }
 
@@ -513,12 +527,12 @@ Saya butuh layanan AC:
 
 Mohon teknisi datang untuk cek. Terima kasih!`;
       
-      const url = `https://wa.me/6282312235675?text=${encodeURIComponent(message)}`;
+      const url = `https://wa.me/628997499994?text=${encodeURIComponent(message)}`;
       window.open(url, "_blank");
     }
 
     function callNow() {
-      alert('📞 Hubungi: 0823-1223-5675\n\nOperasional:\nSenin-Sabtu: 08:00-20:00\nMinggu: 09:00-17:00\n\nEmergency 24/7 tersedia!');
+      alert('📞 Hubungi: 0899-7499-994\n\nOperasional:\nSenin-Sabtu: 08:00-20:00\nMinggu: 09:00-17:00\n\nEmergency 24/7 tersedia!');
     }
 
     function emergencyCall() {
@@ -533,7 +547,7 @@ Saya butuh teknisi AC SEGERA:
 
 Mohon response cepat!`;
       
-      const url = `https://wa.me/6282312235675?text=${encodeURIComponent(message)}`;
+      const url = `https://wa.me/628997499994?text=${encodeURIComponent(message)}`;
       window.open(url, "_blank");
     }
   </script>
