@@ -33,7 +33,7 @@
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      padding: 20px;
+      padding: 0;
       background: #f5f6fa;
       color: #2f3640;
     }
@@ -51,9 +51,52 @@
       opacity: 0.5;
       z-index: -1;
     }
+    header {
+      background: linear-gradient(135deg, #273c75, #40739e);
+      color: white;
+      padding: 25px 20px;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      margin: 0 0 10px 0;
+      font-size: 2.2rem;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .brand-logo {
+      height: 30px;
+      width: auto;
+      display: inline-block;
+    }
+    nav {
+      background: #40739e;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 15px;
+      border-radius: 20px;
+      transition: all 0.3s ease;
+    }
+    nav a:hover, nav a.active {
+      background: rgba(255,255,255,0.2);
+      transform: translateY(-2px);
+    }
     .container {
       max-width: 1200px;
       margin: 0 auto;
+      padding: 20px;
     }
     .page-selector {
       text-align: center;
@@ -228,9 +271,74 @@
       font-size: 3rem;
       margin-bottom: 10px;
     }
+    footer {
+      background: #273c75;
+      color: white;
+      text-align: center;
+      padding: 30px;
+      margin-top: 40px;
+    }
+    footer a {
+      color: #fbc531;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .whatsapp-float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 30px;
+      right: 30px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 2px 2px 20px rgba(0,0,0,0.3);
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      animation: pulse 2s infinite;
+    }
+    .whatsapp-float:hover {
+      background-color: #128c7e;
+      transform: scale(1.1);
+    }
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+      70% { box-shadow: 0 0 0 10px rgba(37, 211, 102, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+    }
   </style>
 </head>
 <body>
+  <header>
+    <h1>
+      <img src="logo.png" alt="LABABIL SOLUTION Logo" class="brand-logo" loading="eager">
+      ⚡ Layanan Listrik & AC Profesional
+    </h1>
+    <p>LABABIL SOLUTION - Teknisi Berlisensi & Terpercaya</p>
+  </header>
+
+  <nav>
+    <a href="index.html">🏠 Beranda</a>
+    <a href="cctv.html">📹 CCTV</a>
+    <a href="jaringan.html">🌐 Jaringan</a>
+    <a href="listrik.html" class="active">⚡ Listrik</a>
+    <a href="listrik.html#ac">❄️ AC</a>
+    <a href="smarthome.html">🏠 SmartHome</a>
+  </nav>
+
+  <!-- Breadcrumb Navigation -->
+  <nav style="background: #f8f9fa; padding: 10px 20px; font-size: 0.9rem; color: #666;">
+    <a href="index.html" style="color: #40739e; text-decoration: none;">Beranda</a> 
+    <span style="margin: 0 10px;">›</span> 
+    <span style="color: #273c75; font-weight: bold;">Layanan Instalasi Listrik & AC</span>
+  </nav>
+
   <div class="container">
     <div class="page-selector">
       <button onclick="showPage('listrik')" class="active" id="btn-listrik">⚡ Layanan Listrik</button>
@@ -470,6 +578,26 @@
       </div>
     </div>
   </div>
+
+  <footer>
+    <p><strong>LABABIL SOLUTION</strong> - Spesialis Listrik & AC Terpercaya di Jambi</p>
+    <p>📍 Perumahan Mutiara Selatan Blok M12 RT.19, Kenali Asam Bawah, Jambi</p>
+    <p>📱 <a href="https://wa.me/628997499994">0899-7499-994</a> | ✉️ <a href="mailto:info@lababilsolution.com">info@lababilsolution.com</a></p>
+    <p>© 2025 LABABIL SOLUTION | <a href="https://youtube.com/@l4">YouTube</a></p>
+    <div style="margin-top: 20px; font-size: 0.9rem;">
+      <p><strong>Layanan Lainnya:</strong> 
+        <a href="index.html" style="color: #fbc531; text-decoration: none; margin: 0 10px;">Beranda</a> |
+        <a href="cctv.html" style="color: #fbc531; text-decoration: none; margin: 0 10px;">CCTV Keamanan</a> |
+        <a href="jaringan.html" style="color: #fbc531; text-decoration: none; margin: 0 10px;">Jaringan Internet</a> |
+        <a href="smarthome.html" style="color: #fbc531; text-decoration: none; margin: 0 10px;">SmartHome</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float Button -->
+  <a href="https://wa.me/628997499994" class="whatsapp-float" target="_blank" title="Chat WhatsApp Listrik & AC">
+    💬
+  </a>
 
   <script>
     function showPage(pageId) {
